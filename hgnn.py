@@ -48,7 +48,7 @@ class WSVAD_Model(nn.Module):
 # 2. 训练与评估逻辑 (MIL Ranking Logic)
 # ==========================================
 def run_experiment():
-    CACHE_DIR = r"D:\vad_hgnn\cache"
+    CACHE_DIR = "./cache"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
     # 加载数据
